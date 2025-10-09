@@ -6,6 +6,8 @@ public class Decisiones {
 
         if (fechaDeLanzamiento > 2022) {
             System.out.println("Peliculas más populares");
+        }else {
+            System.out.println("Peliculas Retro que aún vale la pena ver");
         }
     }
 }
