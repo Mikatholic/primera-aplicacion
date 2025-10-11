@@ -4,6 +4,7 @@ public class Pelicula {
     int duracionEnMinutos;
     boolean incluidoEnElPlan;
     double sumaDeLasEvaluaciones;
+    int totalDeLasEvaluaciones;
 
 
     void muestraFichaTecnica() {
@@ -14,6 +15,10 @@ public class Pelicula {
 
     void evalua(double nota){
         sumaDeLasEvaluaciones = sumaDeLasEvaluaciones + nota;
+        totalDeLasEvaluaciones++;
         }
 
+    double calculaMedia(){
+        return sumaDeLasEvaluaciones / totalDeLasEvaluaciones;
+    }
 }
