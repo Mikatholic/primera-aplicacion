@@ -8,7 +8,10 @@ public class Main {
         matrix1.muestraFichaTecnica();
         matrix1.evalua(8.9);
         matrix1.evalua(10);
+
         System.out.println(matrix1.sumaDeLasEvaluaciones);
+        System.out.println(matrix1.totalDeLasEvaluaciones);
+        System.out.println(matrix1.calculaMedia());
 
         Pelicula matrix2 = new Pelicula();
         matrix2.nombre = "Matrix Recargado";
