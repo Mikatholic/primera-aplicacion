@@ -6,12 +6,15 @@ public class Main {
         matrix1.fechaDeLanzamiento = 1999;
 
         matrix1.muestraFichaTecnica();
+        matrix1.evalua(8.9);
+        matrix1.evalua(10);
+        System.out.println(matrix1.sumaDeLasEvaluaciones);
 
         Pelicula matrix2 = new Pelicula();
         matrix2.nombre = "Matrix Recargado";
         matrix2.duracionEnMinutos = 138;
         matrix2.fechaDeLanzamiento = 2003;
 
-        matrix2.muestraFichaTecnica();
+ //       matrix2.muestraFichaTecnica();
     }
 }
