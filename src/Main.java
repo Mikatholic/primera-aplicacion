@@ -1,23 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Bienvenido(a) a Screen Match");
-        System.out.println("Pelicula: Matrix");
+        Pelicula matrix1 = new Pelicula();
+        matrix1.nombre = "Matrix";
+        matrix1.duracionEnMinutos = 131;
+        matrix1.fechaDeLanzamiento = 1999;
 
-        int fechaDeLanzamiento = 1999;
-        boolean incluidoEnElPlan = true;
-        double notaDeLaPelicula = 8.2;
+        System.out.println("La pelicula es: " + matrix1.nombre);
+        System.out.println("El tiempo de duración es: " + matrix1.duracionEnMinutos);
+        System.out.println("Se estreno en: " + matrix1.fechaDeLanzamiento);
 
-        double media = (8.2 + 6.0 + 9.0) / 3;
-        System.out.println(media);
+        Pelicula matrix2 = new Pelicula();
+        matrix2.nombre = "Matrix Recargado";
+        matrix2.duracionEnMinutos = 138;
+        matrix2.fechaDeLanzamiento = 2003;
 
-        String sinopsis = """
-                Matrix es una paradoja
-                La mejor pelicula del fin del milenio
-                Fué lanzada en:
-                """ + fechaDeLanzamiento;
-        System.out.println(sinopsis);
-
-        int clasificacion = (int) (media / 2);
-        System.out.println(clasificacion);
+        System.out.println("La pelicula es: " + matrix2.nombre);
+        System.out.println("El tiempo de duración es: " + matrix2.duracionEnMinutos);
+        System.out.println("Se estreno en: " + matrix2.fechaDeLanzamiento);
     }
 }
