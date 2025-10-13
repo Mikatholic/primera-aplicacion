@@ -1,4 +1,4 @@
-package com.aluracursos.screenmatch.lecciones;
+package lecciones;
 
 import java.util.Scanner;
 

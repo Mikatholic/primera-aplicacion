@@ -1,4 +1,4 @@
-package com.aluracursos.screenmatch.lecciones;
+package lecciones;
 
 public class Decisiones {
     public static void main(String[] args) {
