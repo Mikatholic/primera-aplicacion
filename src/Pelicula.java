@@ -3,8 +3,12 @@ public class Pelicula {
     int fechaDeLanzamiento;
     int duracionEnMinutos;
     boolean incluidoEnElPlan;
-    double sumaDeLasEvaluaciones;
-    int totalDeLasEvaluaciones;
+    private double sumaDeLasEvaluaciones;
+    private int totalDeLasEvaluaciones;
+
+    int getTotalDeLasEvaluaciones(){
+        return totalDeLasEvaluaciones;
+    }
 
 
     void muestraFichaTecnica() {
