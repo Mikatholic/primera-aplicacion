@@ -8,6 +8,22 @@ public class Titulo {
     private double sumaDeLasEvaluaciones;
     private int totalDeLasEvaluaciones;
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getFechaDeLanzamiento() {
+        return fechaDeLanzamiento;
+    }
+
+    public int getDuracionEnMinutos() {
+        return duracionEnMinutos;
+    }
+
+    public boolean isIncluidoEnElPlan() {
+        return incluidoEnElPlan;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
