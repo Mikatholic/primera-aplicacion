@@ -1,3 +1,5 @@
+package com.aluracursos.screenmatch.lecciones;
+
 public class Decisiones {
     public static void main(String[] args) {
         int fechaDeLanzamiento = 1999;

@@ -1,3 +1,5 @@
+package com.aluracursos.screenmatch.lecciones;
+
 import java.util.Scanner;
 
 public class Lectura {

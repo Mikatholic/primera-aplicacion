@@ -1,20 +1,18 @@
+package com.aluracursos.screenmatch.lecciones;
+
 import java.util.Scanner;
 
-public class Evaluaciones {
+public class Loops {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         double nota = 0;
         double mediaEvaluaciones = 0;
-        double totalEvaluaciones = 0;
 
-        while (nota != -1){
+        for (int i = 0; i < 3; i++) {
             System.out.println("Escribe la nota que le darias a la pelicula Matrix");
             nota = teclado.nextDouble();
-            if (nota != -1){
-                mediaEvaluaciones += nota;
-                totalEvaluaciones++;
-            }
+            mediaEvaluaciones = mediaEvaluaciones + nota;
         }
-        System.out.println("La media de evaluaciones para Matrix es: " + mediaEvaluaciones / totalEvaluaciones);
+        System.out.println("La media de evaluaciones para Matrix es:" + mediaEvaluaciones / 3);
     }
 }
