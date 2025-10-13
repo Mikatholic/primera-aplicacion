@@ -21,9 +21,11 @@ public class Main {
         howIMeetYourMother.setNombre("How I meet your mother");
         howIMeetYourMother.setFechaDeLanzamiento(2005);
         howIMeetYourMother.setTemporadas(9);
-        howIMeetYourMother.setEpisodiosPorTemporada(22 - 24);
+        howIMeetYourMother.setEpisodiosPorTemporada(24);
         howIMeetYourMother.setMinutosPorEpisodio(22);
-        System.out.println(howIMeetYourMother.getEpisodiosPorTemporada());
+        howIMeetYourMother.muestraFichaTecnica();
+
+        System.out.println(howIMeetYourMother.getDuracionEnMinutos());
 
 
     }
