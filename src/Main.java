@@ -1,3 +1,4 @@
+import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -26,6 +27,11 @@ public class Main {
         howIMeetYourMother.muestraFichaTecnica();
 
         System.out.println(howIMeetYourMother.getDuracionEnMinutos());
+
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluye(matrix1);
+        calculadora.incluye(howIMeetYourMother);
+        System.out.println("Tiempo necesario para ver " + calculadora.getTiempoTotal() + " minutos");
 
 
     }
