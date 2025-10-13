@@ -1,4 +1,5 @@
 import com.aluracursos.screenmatch.modelos.Pelicula;
+import com.aluracursos.screenmatch.modelos.Serie;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,11 +16,15 @@ public class Main {
         System.out.println(matrix1.getTotalDeLasEvaluaciones());
         System.out.println(matrix1.calculaMedia());
 
-//        com.aluracursos.screenmatch.modelos.Pelicula matrix2 = new com.aluracursos.screenmatch.modelos.Pelicula();
-//        matrix2.nombre = "Matrix Recargado";
-//        matrix2.duracionEnMinutos = 138;
-//        matrix2.fechaDeLanzamiento = 2003;
-//
-//       matrix2.muestraFichaTecnica();
+
+        Serie howIMeetYourMother = new Serie();
+        howIMeetYourMother.setNombre("How I meet your mother");
+        howIMeetYourMother.setFechaDeLanzamiento(2005);
+        howIMeetYourMother.setTemporadas(9);
+        howIMeetYourMother.setEpisodiosPorTemporada(22 - 24);
+        howIMeetYourMother.setMinutosPorEpisodio(22);
+        System.out.println(howIMeetYourMother.getEpisodiosPorTemporada());
+
+
     }
 }
