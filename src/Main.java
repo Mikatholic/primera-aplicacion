@@ -1,4 +1,6 @@
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
+import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -33,6 +35,16 @@ public class Main {
         calculadora.incluye(howIMeetYourMother);
         System.out.println("Tiempo necesario para ver " + calculadora.getTiempoTotal() + " minutos");
 
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtra(matrix1);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("");
+        episodio.setSerie(howIMeetYourMother);
+        episodio.setTotalVisualizaciones(0);
+
+        filtroRecomendacion.filtra(episodio);
 
     }
 }
