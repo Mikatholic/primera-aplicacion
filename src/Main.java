@@ -60,6 +60,7 @@ public class Main {
         matrix3.setDuracionEnMinutos(129);
         matrix3.setIncluidoEnElPlan(false);
 
+        ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
 
 
 
