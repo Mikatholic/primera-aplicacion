@@ -61,9 +61,12 @@ public class Main {
         matrix3.setIncluidoEnElPlan(false);
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(matrix1);
+        listaDePeliculas.add(matrix2);
+        listaDePeliculas.add(matrix3);
 
-
-
+        System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
+        System.out.println("La primera película es: " + listaDePeliculas.get(0).getNombre());
 
     }
 }
