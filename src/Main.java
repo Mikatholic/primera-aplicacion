@@ -54,6 +54,13 @@ public class Main {
         matrix2.setDuracionEnMinutos(138);
         matrix2.setIncluidoEnElPlan(false);
 
+        var matrix3 = new Pelicula();
+        matrix3.setNombre("Matrix Revoluciones");
+        matrix3.setFechaDeLanzamiento(2003);
+        matrix3.setDuracionEnMinutos(129);
+        matrix3.setIncluidoEnElPlan(false);
+
+
 
 
 
