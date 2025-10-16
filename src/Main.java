@@ -66,7 +66,11 @@ public class Main {
         listaDePeliculas.add(matrix3);
 
         System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
-        System.out.println("La primera película es: " + listaDePeliculas.get(0).toString());
+        System.out.println("La primera película es: " + listaDePeliculas.get(0).getNombre());
+
+        System.out.println(listaDePeliculas);
+
+        System.out.println("toString de la pelicula: " + listaDePeliculas.get(0).toString());
 
     }
 }
