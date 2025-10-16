@@ -4,6 +4,8 @@ import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Pelicula matrix1 = new Pelicula();
@@ -45,6 +47,15 @@ public class Main {
         episodio.setTotalVisualizaciones(0);
 
         filtroRecomendacion.filtra(episodio);
+
+        var matrix2 = new Pelicula();
+        matrix2.setNombre("Matrix Recargado");
+        matrix2.setFechaDeLanzamiento(2003);
+        matrix2.setDuracionEnMinutos(138);
+        matrix2.setIncluidoEnElPlan(false);
+
+
+
 
     }
 }
