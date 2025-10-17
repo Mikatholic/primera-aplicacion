@@ -48,8 +48,8 @@ public class Main {
 
         filtroRecomendacion.filtra(episodio);
 
-        var matrix2 = new Pelicula();
-        matrix2.setNombre("Matrix Recargado");
+        var matrix2 = new Pelicula("Matrix Recargado");
+        matrix2.setNombre();
         matrix2.setFechaDeLanzamiento(2003);
         matrix2.setDuracionEnMinutos(138);
         matrix2.setIncluidoEnElPlan(false);
