@@ -8,8 +8,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Pelicula matrix1 = new Pelicula();
-        matrix1.setNombre("Matrix");
+        Pelicula matrix1 = new Pelicula("Matrix");
         matrix1.setDuracionEnMinutos(131);
         matrix1.setFechaDeLanzamiento(1999);
         matrix1.setIncluidoEnElPlan(true);
@@ -49,13 +48,11 @@ public class Main {
         filtroRecomendacion.filtra(episodio);
 
         var matrix2 = new Pelicula("Matrix Recargado");
-        matrix2.setNombre();
         matrix2.setFechaDeLanzamiento(2003);
         matrix2.setDuracionEnMinutos(138);
         matrix2.setIncluidoEnElPlan(false);
 
-        var matrix3 = new Pelicula();
-        matrix3.setNombre("Matrix Revoluciones");
+        var matrix3 = new Pelicula("Matrix Revoluciones");
         matrix3.setFechaDeLanzamiento(2003);
         matrix3.setDuracionEnMinutos(129);
         matrix3.setIncluidoEnElPlan(false);
