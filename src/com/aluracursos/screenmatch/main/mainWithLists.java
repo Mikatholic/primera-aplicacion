@@ -3,6 +3,8 @@ package com.aluracursos.screenmatch.main;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class mainWithLists {
     public static void main(String[] args) {
 
@@ -11,5 +13,10 @@ public class mainWithLists {
         var matrix2 = new Pelicula("Matrix Recargado", 2003);
         var matrix3 = new Pelicula("Matrix Revoluciones", 2003);
         Serie howIMeetYourMother = new Serie("How I meet your mother", 2005);
+
+        ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(matrix1);
+        listaDePeliculas.add(matrix2);
+        listaDePeliculas.add(matrix3);
     }
 }
