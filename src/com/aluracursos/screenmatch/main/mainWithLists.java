@@ -14,9 +14,9 @@ public class mainWithLists {
         var matrix3 = new Pelicula("Matrix Revoluciones", 2003);
         Serie howIMeetYourMother = new Serie("How I meet your mother", 2005);
 
-        ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
-        listaDePeliculas.add(matrix1);
-        listaDePeliculas.add(matrix2);
-        listaDePeliculas.add(matrix3);
+        ArrayList<Pelicula> lista = new ArrayList<>();
+        lista.add(matrix1);
+        lista.add(matrix2);
+        lista.add(matrix3);
     }
 }
