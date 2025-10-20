@@ -20,5 +20,9 @@ public class mainWithLists {
         lista.add(matrix2);
         lista.add(matrix3);
         lista.add(howIMeetYourMother);
+
+        for (Titulo item: lista) {
+            System.out.println(item);
+        }
     }
 }
