@@ -39,6 +39,7 @@ public class mainWithLists {
         listaDeArtistas.add("Bruce Lee");
         listaDeArtistas.add("Keanu Reeves");
 
-        Collections
+        Collections.sort(listaDeArtistas);
+        System.out.println("Lista de artistas ordenada" + listaDeArtistas);
     }
 }
