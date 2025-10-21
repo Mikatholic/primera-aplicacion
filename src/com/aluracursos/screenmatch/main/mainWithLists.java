@@ -42,5 +42,8 @@ public class mainWithLists {
 
         Collections.sort(listaDeArtistas);
         System.out.println("Lista de artistas ordenada" + listaDeArtistas);
+
+        Collections.sort(lista);
+
     }
 }
