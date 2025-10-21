@@ -38,6 +38,7 @@ public class mainWithLists {
         listaDeArtistas.add("Jackie Chan");
         listaDeArtistas.add("Bruce Lee");
         listaDeArtistas.add("Keanu Reeves");
+        System.out.println("lista de artistas no ordenada" + listaDeArtistas);
 
         Collections.sort(listaDeArtistas);
         System.out.println("Lista de artistas ordenada" + listaDeArtistas);
