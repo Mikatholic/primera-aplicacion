@@ -5,6 +5,7 @@ import com.aluracursos.screenmatch.modelos.Serie;
 import com.aluracursos.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class mainWithLists {
     public static void main(String[] args) {
@@ -36,6 +37,8 @@ public class mainWithLists {
         ArrayList<String> listaDeArtistas = new ArrayList<>();
         listaDeArtistas.add("Jackie Chan");
         listaDeArtistas.add("Bruce Lee");
-        listaDeArtistas.add("Keanu Reeves")
+        listaDeArtistas.add("Keanu Reeves");
+
+        Collections
     }
 }
