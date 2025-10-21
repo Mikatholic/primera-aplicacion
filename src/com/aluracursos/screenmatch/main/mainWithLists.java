@@ -6,6 +6,7 @@ import com.aluracursos.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class mainWithLists {
     public static void main(String[] args) {
@@ -45,5 +46,8 @@ public class mainWithLists {
 
         Collections.sort(lista);
         System.out.println("Lista de titulo ordenada" + lista);
+
+        lista.sort(Comparator.comparing(Titulo::getFechaDeLanzamiento));
+        System.out.println("Lista ordenada por fecha" + lista);
     }
 }
