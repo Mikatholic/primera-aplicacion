@@ -26,6 +26,8 @@ public class mainWithLists {
 
         for (Titulo item: lista) {
             System.out.println(item);
+            Pelicula pelicula = (Pelicula)item;
+            System.out.println(pelicula.getClasificacion());
         }
     }
 }
