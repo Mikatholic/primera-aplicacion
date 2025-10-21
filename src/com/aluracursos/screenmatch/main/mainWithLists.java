@@ -25,9 +25,12 @@ public class mainWithLists {
         lista.add(howIMeetYourMother);
 
         for (Titulo item: lista) {
-            System.out.println(item);
-            Pelicula pelicula = (Pelicula)item;
-            System.out.println(pelicula.getClasificacion());
+            System.out.println(item.getNombre());
+            if (item instanceof Pelicula){
+                Pelicula pelicula = (Pelicula)item;
+                System.out.println(pelicula.getClasificacion());
+            }
+
         }
     }
 }
