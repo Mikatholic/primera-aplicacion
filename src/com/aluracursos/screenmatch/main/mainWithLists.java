@@ -18,6 +18,7 @@ public class mainWithLists {
         matrix3.evalua(10);
         Serie howIMeetYourMother = new Serie("How I meet your mother", 2005);
 
+
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(matrix1);
         lista.add(matrix2);
@@ -31,5 +32,10 @@ public class mainWithLists {
             }
 
         }
+
+        ArrayList<String> listaDeArtistas = new ArrayList<>();
+        listaDeArtistas.add("Jackie Chan");
+        listaDeArtistas.add("Bruce Lee");
+        listaDeArtistas.add("Keanu Reeves")
     }
 }
