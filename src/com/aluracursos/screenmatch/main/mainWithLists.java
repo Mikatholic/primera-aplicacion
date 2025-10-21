@@ -21,7 +21,7 @@ public class mainWithLists {
         Serie howIMeetYourMother = new Serie("How I meet your mother", 2005);
 
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+       List<Titulo> lista = new ArrayList<>();
         lista.add(matrix1);
         lista.add(matrix2);
         lista.add(matrix3);
