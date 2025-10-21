@@ -11,8 +11,11 @@ public class mainWithLists {
 
 
         Pelicula matrix1 = new Pelicula("Matrix", 1999);
+        matrix1.evalua(9);
         var matrix2 = new Pelicula("Matrix Recargado", 2003);
+        matrix2.evalua(7);
         var matrix3 = new Pelicula("Matrix Revoluciones", 2003);
+        matrix3.evalua(10);
         Serie howIMeetYourMother = new Serie("How I meet your mother", 2005);
 
         ArrayList<Titulo> lista = new ArrayList<>();
