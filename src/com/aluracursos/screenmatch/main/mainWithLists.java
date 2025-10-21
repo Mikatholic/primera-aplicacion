@@ -26,7 +26,7 @@ public class mainWithLists {
 
         for (Titulo item: lista) {
             System.out.println(item.getNombre());
-            if (item instanceof Pelicula pelicula){
+            if (item instanceof Pelicula pelicula && pelicula.getClasificacion() > 9){
                 System.out.println(pelicula.getClasificacion());
             }
 
