@@ -4,10 +4,7 @@ import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 import com.aluracursos.screenmatch.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class mainWithLists {
     public static void main(String[] args) {
@@ -22,7 +19,7 @@ public class mainWithLists {
         Serie howIMeetYourMother = new Serie("How I meet your mother", 2005);
 
 
-       List<Titulo> lista = new ArrayList<>();
+       List<Titulo> lista = new LinkedList<>();
         lista.add(matrix1);
         lista.add(matrix2);
         lista.add(matrix3);
