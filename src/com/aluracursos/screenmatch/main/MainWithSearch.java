@@ -10,6 +10,8 @@ import java.util.Scanner;
 public class MainWithSearch {
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner lectura = new Scanner(System.in);
+        System.out.println("Escriba el nombre de una pelicula: ");
+
 
         HttpClient client = HttpClient.newHttpClient();
 
