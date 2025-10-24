@@ -11,5 +11,7 @@ public class MainWithSearch {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("http://foo.com/"))
                 .build();
+        HttpResponse<String> response = client
+                .send(request, BodyHandlers.ofString());
     }
 }
