@@ -6,7 +6,7 @@ import com.aluracursos.screenmatch.modelos.Titulo;
 
 import java.util.*;
 
-public class mainWithLists {
+public class MainWithLists {
     public static void main(String[] args) {
 
 
