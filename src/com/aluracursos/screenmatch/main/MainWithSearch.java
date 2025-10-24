@@ -13,10 +13,11 @@ public class MainWithSearch {
         System.out.println("Escriba el nombre de una pelicula: ");
         var busqueda = lectura.next();
 
-        HttpClient client = HttpClient.newHttpClient();
+        String direccion = "https://www.omdbapi.com/?t="+busqueda+"&apikey=ba29c8e";
 
+        HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://www.omdbapi.com/?t=matrix&y=1999&apikey=ba29c8e"))
+                .uri(URI.create("matrix"))
                 .build();
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
