@@ -11,9 +11,11 @@ public class MainWithSearch {
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://foo.com/"))
+                .uri(URI.create("https://www.omdbapi.com/?t=matrix&y=1999&apikey=ba29c8e"))
                 .build();
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
+
+
     }
 }
