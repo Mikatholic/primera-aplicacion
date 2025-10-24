@@ -13,6 +13,6 @@ public class MainWithSearch {
                 .uri(URI.create("http://foo.com/"))
                 .build();
         HttpResponse<String> response = client
-                .send(request, BodyHandlers.ofString());
+                .send(request, HttpResponse.BodyHandlers.ofString());
     }
 }
