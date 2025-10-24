@@ -3,6 +3,7 @@ package com.aluracursos.screenmatch.main;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 public class MainWithSearch {
     public static void main(String[] args) {
