@@ -1,5 +1,6 @@
 package com.aluracursos.screenmatch.main;
 
+import com.aluracursos.screenmatch.modelos.Titulo;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -24,9 +25,10 @@ public class MainWithSearch {
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
+        String json = response.body();
         System.out.println(response.body());
 
         Gson gson = new Gson();
-        gson.
+        Titulo miTitulo = gson.fromJson(json, Titulo.class);
     }
 }
