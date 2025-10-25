@@ -30,6 +30,6 @@ public class MainWithSearch {
 
         Gson gson = new Gson();
         Titulo miTitulo = gson.fromJson(json, Titulo.class);
-        System.out.println(miTitulo.getNombre());
+        System.out.println("Titulo: "+miTitulo.getNombre());
     }
 }
