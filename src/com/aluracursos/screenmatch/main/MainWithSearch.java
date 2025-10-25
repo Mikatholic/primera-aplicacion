@@ -1,6 +1,7 @@
 package com.aluracursos.screenmatch.main;
 
 import com.aluracursos.screenmatch.modelos.Titulo;
+import com.aluracursos.screenmatch.modelos.TituloOmdb;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -29,7 +30,8 @@ public class MainWithSearch {
         System.out.println(response.body());
 
         Gson gson = new Gson();
-        Titulo miTitulo = gson.fromJson(json, Titulo.class);
-        System.out.println(miTitulo);
+        //Titulo miTitulo = gson.fromJson(json, Titulo.class);
+        TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+        System.out.println(miTituloOmdb);
     }
 }
