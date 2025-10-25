@@ -1,6 +1,10 @@
 package com.aluracursos.screenmatch.modelos;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo implements Comparable<Titulo>{
+    @SerializedName()
+
     private String nombre;
     private int fechaDeLanzamiento;
     private int duracionEnMinutos;
