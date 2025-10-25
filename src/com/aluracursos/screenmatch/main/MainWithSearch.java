@@ -29,7 +29,7 @@ public class MainWithSearch {
         String json = response.body();
         System.out.println(response.body());
 
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
         //Titulo miTitulo = gson.fromJson(json, Titulo.class);
         TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
         System.out.println(miTituloOmdb);
