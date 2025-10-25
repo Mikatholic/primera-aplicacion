@@ -23,5 +23,8 @@ public class MainWithSearch {
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
         System.out.println(response.body());
+
+        Gson gson = new Gson();
+        gson.
     }
 }
