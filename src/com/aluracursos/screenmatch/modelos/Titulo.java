@@ -17,6 +17,11 @@ public class Titulo implements Comparable<Titulo>{
         this.fechaDeLanzamiento = fechaDeLanzamiento;
     }
 
+    public Titulo(TituloOmdb miTituloOmdb) {
+        this.nombre = miTituloOmdb.title();
+        this.fechaDeLanzamiento = Interger.valmiTituloOmdb.year();
+    }
+
     public String getNombre() {
         return nombre;
     }
