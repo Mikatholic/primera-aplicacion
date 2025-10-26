@@ -36,7 +36,7 @@ public class MainWithSearch {
                 .create();
         TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
         System.out.println(miTituloOmdb);
-
         Titulo miTitulo = new Titulo(miTituloOmdb);
+        System.out.println(miTitulo);
     }
 }
