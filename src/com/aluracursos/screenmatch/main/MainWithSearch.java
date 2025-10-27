@@ -42,6 +42,8 @@ public class MainWithSearch {
         }catch(NumberFormatException e){
             System.out.println("Ocurrio un error: ");
             System.out.println(e.getMessage());
+        }catch(IllegalArgumentException e){
+            System.out.println("Error en la URI, verifique la dirección");
         }
         System.out.println("Finalizo la ejecución del programa");
 
