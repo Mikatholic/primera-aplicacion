@@ -43,7 +43,7 @@ public class MainWithSearch {
                 System.out.println("Ocurrio un error: ");
                 System.out.println(e.getMessage());
             }
-
+        System.out.println("Finalizo la ejecución del programa");
 
     }
 }
