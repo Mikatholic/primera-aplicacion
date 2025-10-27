@@ -38,9 +38,9 @@ public class MainWithSearch {
         System.out.println(miTituloOmdb);
             try{
                 Titulo miTitulo = new Titulo(miTituloOmdb);
+                System.out.println(miTitulo);
             }
 
 
-        System.out.println(miTitulo);
     }
 }
