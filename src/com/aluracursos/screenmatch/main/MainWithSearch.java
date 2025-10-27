@@ -39,6 +39,9 @@ public class MainWithSearch {
             try{
                 Titulo miTitulo = new Titulo(miTituloOmdb);
                 System.out.println(miTitulo);
+            }catch(NumberFormatException e){
+                System.out.println("Ocurrio un error: ");
+                System.out.println(e.getMessage());
             }
 
 
