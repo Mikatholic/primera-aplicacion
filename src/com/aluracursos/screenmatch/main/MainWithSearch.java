@@ -23,7 +23,9 @@ public class MainWithSearch {
             System.out.println("Escriba el nombre de una pelicula: ");
             var busqueda = lectura.next();
 
-
+            if(busqueda.equalsIgnoreCase("salir")){
+                break;
+            }
 
             String direccion = "https://www.omdbapi.com/?t="+busqueda+"&apikey=ba29c8e";
             try{
