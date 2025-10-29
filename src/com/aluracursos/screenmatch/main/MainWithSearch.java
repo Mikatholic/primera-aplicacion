@@ -59,6 +59,7 @@ public class MainWithSearch {
                 System.out.println(e.getMessage());
             }
         }
+        System.out.println(titulos);
         System.out.println("Finalizo la ejecución del programa");
 
     }
