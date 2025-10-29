@@ -25,6 +25,9 @@ public class MainWithSearch {
         while(true){
             System.out.println("Escriba el nombre de una pelicula: ");
             var busqueda = lectura.next();
+            Gson gson = new GsonBuilder()
+                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                    .create();
 
             if(busqueda.equalsIgnoreCase("salir")){
                 break;
