@@ -1,7 +1,9 @@
 package com.aluracursos.screenmatch.main;
 
-public class AdministradorGson {
+import com.google.gson.Gson;
 
+public class AdministradorGson {
+    public Gson obtenerGson(){
 
     }
 }
