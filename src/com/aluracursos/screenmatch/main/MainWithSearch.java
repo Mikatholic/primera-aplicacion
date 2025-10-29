@@ -34,14 +34,8 @@ public class MainWithSearch {
                 break;
             }
 
-            String direccion = "https://www.omdbapi.com/?t="+busqueda+"&apikey=ba29c8e";
             try{
-                HttpClient client = HttpClient.newHttpClient();
-                HttpRequest request = HttpRequest.newBuilder()
-                        .uri(URI.create(direccion))
-                        .build();
-                HttpResponse<String> response = client
-                        .send(request, HttpResponse.BodyHandlers.ofString());
+
 
                 String json = response.body();
                 System.out.println(response.body());
