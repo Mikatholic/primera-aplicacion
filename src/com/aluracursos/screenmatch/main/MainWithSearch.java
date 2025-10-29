@@ -13,11 +13,13 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainWithSearch {
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner lectura = new Scanner(System.in);
+        List<Titulo> titulos = new ArrayList<>();
 
         while(true){
             System.out.println("Escriba el nombre de una pelicula: ");
