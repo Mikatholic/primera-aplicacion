@@ -42,9 +42,6 @@ public class MainWithSearch {
                 String json = response.body();
                 System.out.println(response.body());
 
-                Gson gson = new GsonBuilder()
-                        .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                        .create();
                 TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
                 System.out.println(miTituloOmdb);
 
@@ -60,6 +57,8 @@ public class MainWithSearch {
             }
         }
         System.out.println(titulos);
+        FileWriter escritura = new FileWriter("titulos.json")
+                escritura.write();
         System.out.println("Finalizo la ejecución del programa");
 
     }
