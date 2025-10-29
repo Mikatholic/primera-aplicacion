@@ -18,6 +18,11 @@ import java.util.Scanner;
 public class MainWithSearch {
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner lectura = new Scanner(System.in);
+
+        while(true){
+
+        }
+
         System.out.println("Escriba el nombre de una pelicula: ");
         var busqueda = lectura.next();
 
