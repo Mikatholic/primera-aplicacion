@@ -20,41 +20,41 @@ public class MainWithSearch {
         Scanner lectura = new Scanner(System.in);
 
         while(true){
+            System.out.println("Escriba el nombre de una pelicula: ");
+            var busqueda = lectura.next();
 
-        }
 
-        System.out.println("Escriba el nombre de una pelicula: ");
-        var busqueda = lectura.next();
 
-        String direccion = "https://www.omdbapi.com/?t="+busqueda+"&apikey=ba29c8e";
-        try{
-            HttpClient client = HttpClient.newHttpClient();
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(direccion))
-                    .build();
-            HttpResponse<String> response = client
-                    .send(request, HttpResponse.BodyHandlers.ofString());
+            String direccion = "https://www.omdbapi.com/?t="+busqueda+"&apikey=ba29c8e";
+            try{
+                HttpClient client = HttpClient.newHttpClient();
+                HttpRequest request = HttpRequest.newBuilder()
+                        .uri(URI.create(direccion))
+                        .build();
+                HttpResponse<String> response = client
+                        .send(request, HttpResponse.BodyHandlers.ofString());
 
-            String json = response.body();
-            System.out.println(response.body());
+                String json = response.body();
+                System.out.println(response.body());
 
-            Gson gson = new GsonBuilder()
-                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                    .create();
-            TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
-            System.out.println(miTituloOmdb);
+                Gson gson = new GsonBuilder()
+                        .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                        .create();
+                TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+                System.out.println(miTituloOmdb);
 
-            Titulo miTitulo = new Titulo(miTituloOmdb);
-            System.out.println("Titulo ya convertido: " + miTitulo);
+                Titulo miTitulo = new Titulo(miTituloOmdb);
+                System.out.println("Titulo ya convertido: " + miTitulo);
 
-            FileWriter escritura = new FileWriter("peliculas.txt");
-        escritura.write(miTitulo.toString());
-        escritura.close();
-        }catch(NumberFormatException e){
-            System.out.println("Ocurrio un error: ");
-            System.out.println(e.getMessage());
-        }catch(ErrorEnConversionDeDuracionException e){
-            System.out.println(e.getMessage());
+                FileWriter escritura = new FileWriter("peliculas.txt");
+                escritura.write(miTitulo.toString());
+                escritura.close();
+            }catch(NumberFormatException e){
+                System.out.println("Ocurrio un error: ");
+                System.out.println(e.getMessage());
+            }catch(ErrorEnConversionDeDuracionException e){
+                System.out.println(e.getMessage());
+            }
         }
         System.out.println("Finalizo la ejecución del programa");
 
