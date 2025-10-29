@@ -13,5 +13,7 @@ public class AdministradorGson {
             .setPrettyPrinting()
             .create();
     }
-    public String convertirAJson(List<Titulo> titulos)
+    public String convertirAJson(List<Titulo> titulos, Gson gson){
+        return gson.toJson(titulos);
+    }
 }
