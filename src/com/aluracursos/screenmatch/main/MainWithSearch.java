@@ -60,7 +60,7 @@ public class MainWithSearch {
             }
         }
         System.out.println(titulos);
-        FileWriter escritura = new FileWriter("titulos.json")
+        FileWriter escritura = new FileWriter("titulos.json");
                 escritura.write(gson.toJson(titulos));
                 escritura.close();
         System.out.println("Finalizo la ejecución del programa");
