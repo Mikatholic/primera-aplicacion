@@ -1,7 +1,6 @@
 package com.aluracursos.screenmatch.modelos;
 
 import com.aluracursos.screenmatch.excepcion.ErrorEnConversionDeDuracionException;
-import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo>{
     private String nombre;
